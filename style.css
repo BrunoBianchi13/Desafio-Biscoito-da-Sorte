@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  
+  background: #E70012;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  
+  
+}
+
+.hide{
+  display: none;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  width: min(42.8rem, 90%);
+  background: white;
+  box-shadow: 0 .2rem .4rem black;
+  padding: 4.8rem 6.4rem 6.4rem;
+  border-radius: .5rem;
+}
+
+.box-main h1{
+  color: #E70012;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box-main p{
+  color: #E70012;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4.8rem;
+}
+
+#img-bsc{
+  width: 20rem;
+  height: 14.2rem;
+}
+
+.box-main  button{
+  
+  
+  padding: 1.6rem;
+  border-radius: 0 .4rem .4rem 0;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  align-items: center;
+}
+
+.box-result button{
+  
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: .5rem ;
+  background: var(--iris-80, #E70012);
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
+.box-result h1{
+  color: #E70012;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1.6rem;
+}
+
+#img-msg{
+  
+  margin-bottom: 1.0rem;
+  width: 300px;
+  height: 115px;
+  background: transparent;
+  
+}
+
+#msg h1{
+  
+  gap: 10px;
+  background: #E4EDF1;
+  margin-bottom: 1.7rem;
+  color: #000;
+  text-align: center;
+  font-family: 'Dancing Script';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+
+  animation: MoveUpDown 1s  ;
+  animation-fill-mode: both;
+  position: relative;
+
+}
+
+.box-main button:hover {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+
+
+
+@keyframes MoveUpDown {
+  0% {
+    top: 150px;
+    transform: translateX(10px) scale(0.0);
+  }
+  100% {
+    top: 0px;
+    transform: translateX(0) scale(1.0);
+  }
+  
+}
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
